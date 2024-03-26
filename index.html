@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <span id="name">sidartha<span id="s-name">s</span>ubba</span>
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/shidaruta" target="_blank"> <img class="socials-img"
+                    src="images/github.png" alt="github"></a>
+            <a href="https://www.instagram.com/ze_sidzz?igsh=MWRhcGt4cWJwb3IyNQ==" target="_blank"><img
+                    class="socials-img" src="images/insta.webp" alt=""></a>
+        </div>  
+    </div>
+
+    <div class="intro">
+        <div class="landing">
+            Good <span id="greeting"> </span> <br>
+            I'm  <span id="underline-name">Sidartha Subba</span>. 
+        </div>
+    
+        <div class="description">
+            Currently studying in College of Science and Technology, Bhutan. A passionate web developer who loves building websites.
+            Explore my works below and feel free to reach out for collaborations or inquiries.
+        </div>
+    
+        <div class="contactme">
+        <a href="#" ><span id="contactme">Contact Me</span></a> 
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="project-header">
+                Projects
+        </div>
+            
+        <div class="project-content">
+
+            <div class="project-card">
+                <img class="project-img" src="images/to-do-list.png">
+               <a href="#">To-Do-List</a> 
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="images/anime.png">
+               <a href="#">Anime Wiki</a> 
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="images/cst.png">
+               <a href="#">CST Website</a> 
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="images/calc.png">
+               <a href="#">Calculator</a> 
+            </div>
+                
+        </div>
+            
+    </div>
+    
+    
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-title">
+                Contact
+                <div class="description-footer">
+                    Get in touch with me:
+                </div>
+            </div>
+               
+            <div class="contacts">
+               <div id="email">
+                Email: sidarthsubba@gmail.com
+               </div>
+                
+                <br>
+    
+                <div>
+                    Mobile: +975 17891271
+                </div>
+               
+            </div>
+        </div>
+         <span>sidarthasubba</span> 
+    </div>
+
+<script>
+
+ function getGreeting() {
+            var currentDate = new Date();
+            var currentHour = currentDate.getHours();
+
+            if (currentHour < 12) {
+                return "Morning!";
+            } else if (currentHour < 18) {
+                return "Afternoon!";
+            } else {
+                return "Evening!";
+            }
+        }
+
+        function updateGreeting() {
+            var greeting = getGreeting();
+            document.getElementById("greeting").textContent = greeting;
+        }
+
+        updateGreeting();
+        setInterval(updateGreeting, 60000); 
+
+</script>
+</body>
+
+</html>
