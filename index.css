@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     background-color: rgb(20, 20, 20);
     color: white;
@@ -35,6 +38,33 @@ a {
     gap: 20px;
 }
 
+
+@media (min-width: 1699px){
+    .landing {
+        font-size: 60px;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .description {
+        padding-left: 5%;
+        text-align: left;
+        width: 650px;
+    }
+
+    .project-content {
+        display: grid;
+        justify-items: start;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        padding: 0% 5% 5% 5%;
+        row-gap: 20%;
+    }
+
+    .project-img {
+        width: 60%;
+    }
+}
 @media (max-width: 1699px) and (min-width: 800px) {
     .landing {
         font-size: 60px;
